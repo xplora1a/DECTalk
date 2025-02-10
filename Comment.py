@@ -5,25 +5,24 @@ import time
 
 prompts = [
     "Hello! We'd love to hear your thoughts on today's digital technology exhibition.",
-    "Welcome! Your feedback helps us make our exhibits better. Please share your insights.",
-    "Thank you for stopping by. We'd appreciate a moment of your time to let us know how we're doing.",
-    "Hi there! How are you enjoying the exhibition? Your opinion matters to us.",
-    "Your voice counts! Let us know which displays caught your attention and why.",
-    "We hope you're having a great time. Please tell us what you think of our exhibition.",
-    "Ready to share your thoughts? We'd love to know what you liked best from our digital experience!",
+    "Welcome! Please share your insights.",
+    "We'd appreciate your comments on our digital showcase.",
+    "Hi there! How are you enjoying the exhibition?",
+    "Let us know which displays caught your attention and why.",
+    "Please tell us what you think of our exhibition.",
+    "We'd love to know what you liked best from our digital experience!",
     "Thank you for visiting! Share your impressions with us.",
     "We're all ears! Tell us what sparked your curiosity.",
     "Got a moment? Help us with your valuable feedback.",
-    "Your visit is important to us. Please take a second to let us know what you think.",
+    "Please take a second to let us know what you think.",
     "Spot something you love? Tell us about it!",
-    "Hi! Your feedback creates better experiences. Please share your thoughts.",
-    "Hello there! We can improve future technology showcases with your quick feedback.",
-    "Are you enjoying the show? Let us know what stands out for you.",
+    "Hi! Please share your thoughts.",
+    "Do you remember working with equipment like this? Share your memories with us.",
+    "Are you enjoying the show? Let us know!",
     "We're glad you're here! A short comment from you helps us.",
-    "Where can we improve? Your suggestions help us design the best exhibitions possible.",
-    "Hope the exhibits inspired you! Please tell us how we can enhance your experience.",
+    "Hope the exhibits inspired you! Share your thoughts.",
     "Your feedback helps us innovate. Share your perspective.",
-    "Are we meeting your expectations? Let us know what you really think!"
+    "Let us know what you really think!"
 ]
 
 story1 = [
