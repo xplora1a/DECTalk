@@ -11,7 +11,7 @@ import random
 
 story2= [
 #    "[:phoneme arpabet speak on]",
-    "[:np] A California Shaggy Bear Tale for Seven DECtalk Software Voices.",
+    "[:np] A Redding Shaggy Bear Tale for Seven DECtalk Software Voices.",
     "By Dennis Klatt.",
     "[:np] Once upon a time, there were three bears. They lived in the great forest and tried to adjust to modern times.",
     "[:nh] I'm papa bear. I love my family, but I love [\"]honey best.",
@@ -62,6 +62,7 @@ def speakdelay(prompt):
     return delay
 
 def Button_id1_command():   #Story
+    global lastAvtivity
     lastAvtivity = time.time()
     for line in story2:
         DECtalkQueue.put(line+"\n")
@@ -69,6 +70,7 @@ def Button_id1_command():   #Story
     ProgressBar.start()
     pass
 def Button_id4_command():   #Speak Comment
+    global lastAvtivity
     lastAvtivity = time.time()
     prompt = Entry_id2.get("1.0", tkinter.END)
     if len(prompt) > 0:
@@ -77,6 +79,7 @@ def Button_id4_command():   #Speak Comment
         ProgressBar.start()
     pass
 def Button_id5_command():   #Save Comment
+    global lastAvtivity
     lastAvtivity = time.time()
     comment = Entry_id2.get("1.0", tkinter.END)
     with open("Comment.txt", mode="a") as file:
@@ -86,6 +89,7 @@ def Button_id5_command():   #Save Comment
     Button_id5["state"] = "disabled"
     pass
 def Button_id6_command():   #Clear Comment
+    global lastAvtivity
     lastAvtivity = time.time()
     Entry_id2.delete("1.0", tkinter.END)
     Button_id5["state"] = "normal"
