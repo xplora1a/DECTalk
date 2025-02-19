@@ -4,7 +4,7 @@ import time
 
 
 prompts = [
-    "Hello! We'd love to hear your thoughts on today's digital technology exhibition.",
+    "We'd love to hear your thoughts on the digital technology exhibition.",
     "Welcome! Please share your insights.",
     "We'd appreciate your comments on our digital showcase.",
     "Hi there! How are you enjoying the exhibition?",
@@ -21,7 +21,6 @@ prompts = [
     "Are you enjoying the show? Let us know!",
     "We're glad you're here! A short comment from you helps us.",
     "Hope the exhibits inspired you! Share your thoughts.",
-    "Your feedback helps us innovate. Share your perspective.",
     "Let us know what you really think!"
 ]
 
