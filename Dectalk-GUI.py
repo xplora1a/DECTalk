@@ -118,12 +118,14 @@ def SpeakProgressBar(DelaySeconds):
     pass
 
 def DECtalkSpeak(DECTalkQueue):
+    global lastAvtivity
     DECTalk = serial.Serial(port="/dev/ttyUSB0", baudrate=9600, bytesize=8, parity="N", stopbits=2, xonxoff=True, rtscts=True)
     while True:
         prompt = DECTalkQueue.get().encode("ascii")
         print(prompt)
         DECTalk.write(prompt)
         DECTalk.flush()
+        lastAvtivity = time.time()
         time.sleep(int(len(prompt)/15))
     pass
 
