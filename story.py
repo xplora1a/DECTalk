@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 
 story1 = [
     "[:np] A California Shaggy Bear Tale for Seven DECtalk Software Voices",

@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 
 # libraries Import
 from tkinter import ttk
@@ -119,14 +120,19 @@ def SpeakProgressBar(DelaySeconds):
 
 def DECtalkSpeak(DECTalkQueue):
     global lastAvtivity
-    DECTalk = serial.Serial(port="/dev/ttyUSB0", baudrate=9600, bytesize=8, parity="N", stopbits=2, xonxoff=True, rtscts=True)
+    try:
+        DECTalk = serial.Serial(port="/dev/ttyUSB0", baudrate=9600, bytesize=8, parity="N", stopbits=2, xonxoff=True, rtscts=True)
+        Connected = True
+    except:
+        Connected = False
     while True:
         prompt = DECTalkQueue.get().encode("ascii")
         print(prompt)
-        DECTalk.write(prompt)
-        DECTalk.flush()
+        if Connected:
+            DECTalk.write(prompt)
+            DECTalk.flush()
         lastAvtivity = time.time()
-        time.sleep(int(len(prompt)/15))
+        time.sleep(int(len(prompt)*0.07))
     pass
 
 def RandomPrompt():
