@@ -8,25 +8,24 @@ from threading import Thread
 import serial
 from queue import Queue
 import time
-import random
 
 story2= [
     "[:np]",
     "Hello. I am a DECTalk text-to-speech synthesizer.",
-    "I was developed by Digital Equipment Corporation in the early 1980s.",
-    "This paticular unit was preserved by Edward Hammond.",
-    "I was restored to operation by The Redding Repair Cafe,",
-    "at the Redding Hackspace.",
+    "I was developed by Digital Equipment Corporation in the early ninteen eighties.",
+    "This particular unit was preserved by Edward Hammond,",
+    "and was restored to operation by The Redding Repair Cafe,",
+    "at the Redding Hack-space.",
     "You may have herd my voice used by Stephen Hawking.",
     "I am proud to be surrounded by so many other friends from the past.",
-    "But today I have the honor of opening the Readding Musiums exhibition.",
-    "I therefore declare the exhibition open.",
-    "Thank you."
+    "But today I have the honour of opening the Readding Museums exhibition.",
+    "[:nf]I therefore declare the exhibition open.",
+    "[:np]Thank you."
 ]
 
 # Main Window Properties
 window = tkinter.Tk()
-window.title("DECTalk Open Exabition")
+window.title("DECTalk Open Exhibition")
 window.geometry("900x450")
 
 
