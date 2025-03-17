@@ -12,13 +12,20 @@ import time
 story2= [
     "[:np]",
     "Hello. I am a DECTalk text-to-speech synthesizer.",
-    "I was developed by Digital Equipment Corporation in the early ninteen eighties.",
+    "I gave Stephen Hawking back his ability to speak",
+    "in the early ninetween eighties.",
+    "I have had many other applications, such as providing computer-stored",
+    "details in telephone calls to emergency services,",
+    "rather than simply sounding an alarm.", 
+    "I even used to call to check the needs of people who receive",
+    "meals-on-wheels.",
+    "I was developed by Digital Equipment Corporation.",
     "This particular unit was preserved by Edward Hammond,",
     "and was restored to operation by The Redding Repair Cafe,",
     "at the Redding Hack-space.",
-    "You may have herd my voice used by Stephen Hawking.",
     "I am proud to be surrounded by so many other friends from the past.",
-    "But today I have the honour of opening the Readding Museums exhibition.",
+    "But today I have the honour of opening the Readding Museums",
+    "Digital Equipment Corporation exhibition.",
     "[:nf]I therefore declare the exhibition open.",
     "[:np]Thank you."
 ]
@@ -37,7 +44,7 @@ def speakdelay(prompt):
 def Button_id1_command():   #Story
     for line in story2:
         DECtalkQueue.put(line+"\n")
-    ProgressBar = Thread(target=SpeakProgressBar, args=[30])
+    ProgressBar = Thread(target=SpeakProgressBar, args=[47])
     ProgressBar.start()
     pass
 
