@@ -135,10 +135,12 @@ def DECtalkSpeak(DECTalkQueue):
         time.sleep(int(len(prompt)*0.07))
     pass
 
+# if there has been no activity for 10 minutes, it will randomly select a 
+# prompt from the list and speak it. This is a seperate thread.
 def RandomPrompt():
     global lastAvtivity
     while True:
-        if time.time() - lastAvtivity > 30:
+        if time.time() - lastAvtivity > 600:
             prompt = random.choice(prompts)
             DECtalkQueue.put(prompt)
             ProgressBar = Thread(target=SpeakProgressBar, args=[speakdelay(prompt)])
@@ -237,18 +239,18 @@ ProgressBar_id0 = ttk.Progressbar(
     )
 ProgressBar_id0.place(x=100, y=400)
 
-#start the DECTalk thread
+# start the DECTalk thread
 DECtalkQueue = Queue()
 DECtalkQueue.put("Starting the DECTalk Digital Comment system.\n")
 DECtalkThread = Thread(target=DECtalkSpeak, args=[DECtalkQueue], daemon=True)
 DECtalkThread.start()
 
-#start the RandomPrompt thread
+# start the RandomPrompt thread
 lastAvtivity = time.time()
 RandomPromptThread = Thread(target=RandomPrompt, daemon=True)
 RandomPromptThread.start()
 
-#run the main loop
+# run the main loop
 Entry_id2.focus()
 window.attributes("-fullscreen", True)
 window.mainloop()
