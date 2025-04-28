@@ -154,7 +154,7 @@ def RandomPrompt():
 
 Label_id7 = tkinter.Label(
     master=window,
-    text="Comment on the Exabition",
+    text="Comment on the Exhibition",
     font=("Arial", 24),
     height=1,
     width=30,
