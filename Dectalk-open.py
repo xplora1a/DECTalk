@@ -11,20 +11,18 @@ import time
 
 story2= [
     "[:np]",
-    "Hello. I am a DECTalk text-to-speech synthesizer.",
-    "I gave Steefen Hawking back his ability to speak",
-    "in the early nineteen eighties.",
-    "I have had many other applications, such as providing computer-stored",
-    "details in telephone calls to emergency services,",
-    "I was developed by Digital Equipment Corporation in the nineteen eighties.",
+    "In nineteen sixty-four, a tech town was born.",
+    "In a place called Redding.",
+    "It was a town that would become famous for its",
+    "contribution to the world of computing.",
+    "I am a DECTalk text-to-speech synthesizer.",
+    "I gave Steefen Hawking back his ability to speak.",
+    "I was developed by Digital Equipment in the nineteen eighties.",
     "This particular unit was preserved by Edward Hammond,",
     "and was restored to operation by The Redding Repair Cafe,",
     "at the Redding Hack-space.",
-    "I am proud to be surrounded by so many other friends from the past.",
-    "But today I have the honour of opening the Redding Museums",
-    "Digital Equipment Corporation exhibition.",
-    "[:nf]I therefore declare the exhibition open.",
-    "[:np]Thank you."
+    "I am proud to be surrounded by so many other friends from the past."
+
 ]
 
 # Main Window Properties

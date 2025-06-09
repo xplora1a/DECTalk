@@ -10,8 +10,19 @@ from queue import Queue
 import time
 import random
 
+# Happy Birthday Song
+# This is a simple version of the Happy Birthday song for DECTalk
+
+song = [
+    "[hxae<300,10>piy<300,10> brr<600,12>th<100>dey<600,10> tuw<600,15> yu<1200,14>_<120>]",
+    "[hxae<300,10>piy<300,10> brr<600,12>th<100>dey<600,10> tuw<600,17> yu<1200,15>_<120>]",
+    "[hxae<300,10>piy<300,10> brr<600,22>th<100>dey<600,19> dih<600,15>r ]",
+    "[deh<600,14>ktao<600,12>k]",
+    "[_<120>_<120>]",
+    "[hxae<300,20>piy<300,20> brr<600,19>th<100>dey<600,15> tuw<600,17> yu<1200,15>_<120>]"
+]
+
 story2= [
-#    "[:phoneme arpabet speak on]",
     "[:np] A Redding Shaggy Bear Tale for Seven DECtalk Software Voices.",
     "By Dennis Klatt.",
     "[:np] Once upon a time, there were three bears. They lived in the great forest and tried to adjust to modern times.",
@@ -94,6 +105,21 @@ def Button_id6_command():   #Clear Comment
     lastAvtivity = time.time()
     Entry_id2.delete("1.0", tkinter.END)
     Button_id5["state"] = "normal"
+    Entry_id3.delete(0, tkinter.END)
+    pass
+
+def Button_id7_command():   #Sing Happy Birthday
+    global lastAvtivity
+    lastAvtivity = time.time()
+    name = Entry_id3.get().lower()
+    if len(name) > 0:
+        song[3] = name
+    else:
+        song[3] = "[deh<600,14>ktao<600,12>k]"  
+    for line in song:
+        DECtalkQueue.put(line+"\n")
+    ProgressBar = Thread(target=SpeakProgressBar, args=[20])
+    ProgressBar.start()
     pass
 
 def SpeakProgressBar(DelaySeconds):
@@ -101,6 +127,7 @@ def SpeakProgressBar(DelaySeconds):
     Button_id1["state"] = "disabled"
     Button_id5["state"] = "disabled"
     Button_id6["state"] = "disabled"
+    Button_id7["state"] = "disabled"
     ProgressBar_id0["value"] = 0
     ProgressBar_id0["maximum"] = DelaySeconds
     for i in range(DelaySeconds):
@@ -115,6 +142,7 @@ def SpeakProgressBar(DelaySeconds):
     Button_id1["state"] = "normal"
     Button_id5["state"] = "normal"
     Button_id6["state"] = "normal"
+    Button_id7["state"] = "normal"
     window.update()
     pass
 
@@ -201,13 +229,47 @@ Label_id3 = tkinter.Label(
     text="Click this and the DECTalk will tell you a story:",
     font=("Arial", 14),
     height=1,
-    width=40,
+    width=45,
     bg="#FFFFFF",
     fg="#222222",
     justify="right"
     )
 
 Label_id3.place(x=100, y=295)
+
+Button_id7 = tkinter.Button(
+    master=window,
+    text="Sing",
+    font=("Arial", 20),
+    height=1,
+    width=7,
+    borderwidth=2,
+    bg="#FFFFFF",
+    fg="#222222",
+    command=Button_id7_command
+    )
+Button_id7.place(x=580, y=350)
+
+Label_id7 = tkinter.Label(
+    master=window,
+    text="Put you name in and DECTalk will sing Happy Birthday:",
+    font=("Arial", 14),
+    height=1,
+    width=45,
+    bg="#FFFFFF",
+    fg="#222222",
+    justify="right"
+    )
+Label_id7.place(x=100, y=350)
+Entry_id3 = tkinter.Entry(
+    master=window,
+    font=("Arial", 12),
+    width=20,
+    borderwidth=2,
+    bg="#FFFFFF",
+    fg="#222222",
+    )
+Entry_id3.place(x=100, y=380)
 Entry_id2 = tkinter.scrolledtext.ScrolledText(
     master=window,
     wrap=tkinter.WORD,
@@ -237,7 +299,7 @@ ProgressBar_id0 = ttk.Progressbar(
     mode="determinate",
     length=400,
     )
-ProgressBar_id0.place(x=100, y=400)
+ProgressBar_id0.place(x=100, y=410)
 
 # start the DECTalk thread
 DECtalkQueue = Queue()
@@ -252,5 +314,5 @@ RandomPromptThread.start()
 
 # run the main loop
 Entry_id2.focus()
-window.attributes("-fullscreen", True)
+#window.attributes("-fullscreen", True)
 window.mainloop()
