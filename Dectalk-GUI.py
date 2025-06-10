@@ -314,5 +314,5 @@ RandomPromptThread.start()
 
 # run the main loop
 Entry_id2.focus()
-#window.attributes("-fullscreen", True)
+window.attributes("-fullscreen", True)
 window.mainloop()
