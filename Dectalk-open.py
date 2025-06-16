@@ -27,13 +27,20 @@ story2= [
     "and was restored to operation by The Redding Repair Cafe,[_<300>]",
     "at the Redding Hack-space.[_<600>]",
     "I am proud to be surrounded by so many other friends from the past.",
-    "[_600>]",
-    "[cha<300,13>_<300>cha<600,13>_<300>cha<600,13>_<1600>]",
+    "[_<1600>]",
+    "[oy<300,13>_<300>oy<600,13>_<300>oy<600,13>_<1600>]",
     "I am a DECTalk text-to-speech synthesizer.[_<1600>]",
-    "[la<300,10>_<300>la<600,10>_<300>la<600,10>_<1600>]",
+    "[jh<300,10>_<300>jh<600,10>_<300>jh<600,10>_<1600>]",
     "I am a DECTalk text-to-speech synthesizer.[_<1600>]",
-    "I am a DECTalk text-to-speech synthesizer.[_<1600>]"
-
+    "I am a DECTalk text-to-speech synthesizer.[_<1600>]",
+    "I am a DECTalk.[_<1600>]",
+    "I am a DECTalk.[_<1600>]",
+    "I am a DECTalk.[_<1600>]",
+    "I am a DECTalk text-to-speech synthesizer.[_<1600>]",
+    "DECTalk.[_<1600>]",
+    "DECTalk.[_<1600>]",
+    "DECTalk.[_<1600>]",
+    "DECTalk text-to-speech synthesizer.[_<1600>]"
 ]
 
 # Main Window Properties
