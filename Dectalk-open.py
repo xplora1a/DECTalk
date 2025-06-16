@@ -11,6 +11,11 @@ import time
 
 story2= [
     "[:np]",
+    "[oy<300,13>_<300>ax<600,13>_<300>eh<600,13>_<1600>]",
+    "I am a DECTalk text-to-speech synthesizer.[_<1600>]",
+    "[jh<300,10>_<300>ow<600,10>_<300>aw<600,10>_<1600>]",
+    "I am a DECTalk text-to-speech synthesizer.[_<1600>]",
+    
     "In nineteen sixty-four, a tech town was born.",
     "In a place called Redding.[_<600>]",
     "It was a town that would become famous for its",
