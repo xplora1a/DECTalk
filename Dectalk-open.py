@@ -12,15 +12,15 @@ import time
 story2= [
     "[:np]",
     "In nineteen sixty-four, a tech town was born.",
-    "In a place called Redding.",
+    "In a place called Redding._<600>",
     "It was a town that would become famous for its",
-    "contribution to the world of computing.",
-    "I am a DECTalk text-to-speech synthesizer.",
-    "I gave Steefen Hawking back his ability to speak.",
+    "contribution to the world of computing._<600>",
+    "I am a DECTalk text-to-speech synthesizer._<600>",
+    "I gave Steefen Hawking back his ability to speak._<600>",
     "I was developed by Digital Equipment in the nineteen eighties.",
-    "This particular unit was preserved by Edward Hammond,",
-    "and was restored to operation by The Redding Repair Cafe,",
-    "at the Redding Hack-space.",
+    "I was preserved by Edward Hammond,_<600>",
+    "and was restored to operation by The Redding Repair Cafe,_<300>",
+    "at the Redding Hack-space._<600>",
     "I am proud to be surrounded by so many other friends from the past."
 
 ]
