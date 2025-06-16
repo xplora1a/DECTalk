@@ -23,7 +23,7 @@ story2= [
     "at the Redding Hack-space.[_<600>]",
     "I am proud to be surrounded by so many other friends from the past.",
     "[_600>]",
-    "[cha<300,10>_<300>cha<600,10>_<300>cha<600,10>_<600>],
+    "[cha<300,10>_<300>cha<600,10>_<300>cha<600,10>_<600>]",
     "I am a DECTalk text-to-speech synthesizer.[_<600>]",
     "[cha<300,10>_<300>cha<600,10>_<300>cha<600,10>_<600>],
     "I am a DECTalk text-to-speech synthesizer.[_<600>]",
