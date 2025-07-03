@@ -9,6 +9,7 @@ import serial
 from queue import Queue
 import time
 import random
+import sing_name
 
 # Happy Birthday Song
 # This is a simple version of the Happy Birthday song for DECTalk
@@ -113,7 +114,7 @@ def Button_id7_command():   #Sing Happy Birthday
     lastAvtivity = time.time()
     name = Entry_id3.get().lower()
     if len(name) > 0:
-        song[3] = name
+        song[3] = sing_name.sing_name(name)
     else:
         song[3] = "[deh<600,14>ktao<600,12>k]"  
     for line in song:
