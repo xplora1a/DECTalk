@@ -11,8 +11,8 @@ def sing_name(name: str) -> str:
         str: A DECTalk command string to sing the name.
     """
     # Ensure the name is a string and strip any leading/trailing whitespace
-    name = str(name).strip()
-    name = name.lower()
+    name = str(name).strip().lower()
+
     # divide into two parts and add the note encoding
     sing = "["+name[:(len(name)+1)//2] + "<600,14>" + name[(len(name)-1)//2:] + "<600,12>]"
 
