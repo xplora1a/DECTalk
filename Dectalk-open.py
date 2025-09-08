@@ -54,8 +54,9 @@ story2=[
     "But beneath this brilliance lies a shadow: power concentrated in unseen hands,",
     "a world where privacy has vanished, and algorithms know us better than we know",
     "ourselves. This is not a tale of utopia or ruin, but of a fragile species standing at",
-    "the crossroads of its own destiny. The question is not whether AI will change humanity.",
-    "but whether humanity will endure its own creation",
+    "the crossroads of its own destiny.",
+    "The question is not whether AI will change humanity.",
+    "[_<1600>]but whether humanity will endure its own creation",
     "[_<1600>]",
     "We built the future. But can we survive it?"
 ]
