@@ -45,7 +45,7 @@ story3= [
 
 story2=[
     "[:np]",
-    "humanity’s survival depends not on inventions but on wisdom.",
+    "humanityi survival depends not on inventions but on wisdom.",
     "In the not so distant future, humanity walks a razors edge.",
     "Artificial intelligence, once our greatest tool,",
     "has become a force shaping every choice, every breath, every heartbeat of civilization.",
