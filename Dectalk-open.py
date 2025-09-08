@@ -9,7 +9,7 @@ import serial
 from queue import Queue
 import time
 
-story2= [
+story3= [
     "[:np]",
     "[oy<300,13>_<300>ax<600,13>_<300>eh<600,13>_<1600>]",
     "I am a DECTalk text-to-speech synthesizer.[_<1600>]",
@@ -41,6 +41,23 @@ story2= [
     "DECTalk.[_<1600>]",
     "DECTalk.[_<1600>]",
     "DECTalk text-to-speech synthesizer.[_<1600>]"
+]
+
+story2=[
+    "[:np]",
+    "humanity’s survival depends not on inventions but on wisdom.",
+    "In the not so distant future, humanity walks a razors edge.",
+    "Artificial intelligence, once our greatest tool,",
+    "has become a force shaping every choice, every breath, every heartbeat of civilization.",
+    "Cities shimmer with impossible technology, disease is a relic of history,",
+    "and the stars themselves seem within reach.",
+    "But beneath this brilliance lies a shadow: power concentrated in unseen hands,",
+    "a world where privacy has vanished, and algorithms know us better than we know",
+    "ourselves. This is not a tale of utopia or ruin, but of a fragile species standing at",
+    "the crossroads of its own destiny. The question is not whether AI will change humanity.",
+    "but whether humanity will endure its own creation",
+    "[_<1600>]",
+    "We built the future. But can we survive it?"
 ]
 
 # Main Window Properties
