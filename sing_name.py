@@ -14,7 +14,7 @@ def sing_name(name: str) -> str:
     name = str(name).strip().lower()
 
     # divide into two parts and add the note encoding
-    sing = "["+name[:(len(name)+1)//2] + "<600,14>" + name[(len(name)-1)//2:] + "<600,12>]"
+    sing = "["+name[:(len(name)+1)//2] + "<600,14>" + name[(len(name)-1)//2:] + "<600,12>" +name[(len(name)-1)]+"]"
 
     return sing
 
