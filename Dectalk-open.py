@@ -102,7 +102,7 @@ def DECtalkSpeak(DECTalkQueue):
     except:
         Connected = False
     while True:
-        prompt = DECTalkQueue.get().encode("ascii")
+        prompt = DECTalkQueue.get().encode("ascii","ignore")
         print(prompt)
         if Connected:
             DECTalk.write(prompt)
